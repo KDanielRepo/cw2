@@ -1,8 +1,8 @@
 public abstract class Bramka {
     int coutinput;
-    int inputs;
-    void setInput(int a){
+    String inputs;
+    void setInput(String a){
         inputs = a;
     }
-    abstract int getOutput();
+    abstract String getOutput();
 }

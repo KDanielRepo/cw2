@@ -1,5 +1,5 @@
-public class Nand extends Bramka {
-    //1+1=0
+public class Nor extends Bramka {
+    //0i0=1
     @Override
     String getOutput() {
         if(coutinput!=inputs.length()){
@@ -10,10 +10,10 @@ public class Nand extends Bramka {
         for (int i = 0; i < coutinput; i++) {
             check = inputs.charAt(i);
             if(check==48){
+                wynik="1";
+            }else if(check==49){
                 System.out.println("0");
                 return "0";
-            }else if(check==49){
-                wynik="1";
             }else{
                 System.out.println("podana liczba nie jest liczba binarna");
             }

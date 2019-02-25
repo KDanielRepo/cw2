@@ -1,6 +1,7 @@
 public class Main {
     public static void main(String[] args) {
-        cz2();
+        cz1();
+        //cz2();
     }
     public static void cz2(){
         Kierownik kierownik = new Kierownik();
@@ -18,5 +19,19 @@ public class Main {
         fizyczny.ustawNazwisko("Nowak");
         fizyczny.drukujDzial();
         fizyczny.drukujPlace();
+    }
+    public static void cz1(){
+        Not not = new Not();
+        not.coutinput=3;
+        not.setInput("001");
+        not.getOutput();
+        Nand nand = new Nand();
+        nand.coutinput=3;
+        nand.setInput("101");
+        nand.getOutput();
+        Nor nor = new Nor();
+        nor.coutinput=3;
+        nor.setInput("010");
+        nor.getOutput();
     }
 }
